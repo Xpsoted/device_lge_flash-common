@@ -23,8 +23,7 @@ COMMON_FLASH_PATH := device/lge/flash-common
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(COMMON_FLASH_PATH)/overlay \
-    $(COMMON_FLASH_PATH)/overlay-lineage
+    $(COMMON_FLASH_PATH)/overlay
 
 # Properties
 TARGET_SYSTEM_PROP += $(COMMON_FLASH_PATH)/system.prop
@@ -42,8 +41,7 @@ PRODUCT_COPY_FILES += \
     $(COMMON_FLASH_PATH)/audio/mixer_paths_tavil.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_tavil.xml
 
 # Bootanimation
-TARGET_SCREEN_WIDTH := 1440
-TARGET_SCREEN_HEIGHT := 3120
+TARGET_BOOT_ANIMATION_RES := 1080
 
 # DAC
 PRODUCT_PACKAGES += \
