@@ -194,7 +194,7 @@ vendor/etc/libnfc-nxp-US.conf
 vendor/firmware/libpn553_fw.so:vendor/lib/libpn553_fw.so
 vendor/firmware/libpn553_fw_1D.so:vendor/lib/libpn553_fw_1D.so
 vendor/firmware/libpn553_fw_64.so:vendor/lib64/libpn553_fw_64.so
-vendor/firmware/libpn553_fw_1D_64.so:vendor/lib/libpn553_fw_1D_64.so
+vendor/firmware/libpn553_fw_1D_64.so:vendor/lib64/libpn553_fw_1D_64.so
 
 # Sensor - configs
 vendor/etc/sensors/hals.conf
