@@ -31,14 +31,7 @@ TARGET_VENDOR_PROP += $(COMMON_FLASH_PATH)/vendor.prop
 
 # Audio
 PRODUCT_COPY_FILES += \
-    $(COMMON_FLASH_PATH)/audio/audio_effects_tune.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects_tune.xml \
-    $(COMMON_FLASH_PATH)/audio/audio_io_policy.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_io_policy.conf \
-    $(COMMON_FLASH_PATH)/audio/audio_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info.xml \
-    $(COMMON_FLASH_PATH)/audio/audio_platform_info_qrd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info_qrd.xml \
-    $(COMMON_FLASH_PATH)/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration.xml \
-    $(COMMON_FLASH_PATH)/audio/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
-    $(COMMON_FLASH_PATH)/audio/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
-    $(COMMON_FLASH_PATH)/audio/mixer_paths_tavil.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_tavil.xml
+    $(call find-copy-subdir-files,*,$(COMMON_FLASH_PATH)/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)
 
 # Bootanimation
 TARGET_BOOT_ANIMATION_RES := 1080
