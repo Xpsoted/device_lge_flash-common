@@ -36,11 +36,6 @@ PRODUCT_COPY_FILES += \
 # Bootanimation
 TARGET_BOOT_ANIMATION_RES := 1080
 
-# DAC
-PRODUCT_PACKAGES += \
-    QuadDACPanel \
-    vendor.lge.hardware.audio.dac.control@1.0-service
-
 # Display
 TARGET_SCREEN_DENSITY := 560
 
